@@ -1,0 +1,17 @@
+[unit]
+Description=Robot Service
+
+[Service]
+WorkingDirectory=/home/Robot/RobotService
+ExecStart=/usr/bin/dotnet /home/Robot/RobotService/RobotVibot.IOTService.dll --urls=http://0.0.0.0:4002
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+#KillSignal=SIGINT
+#SyslogIdentifier=dotnet-example
+User=root
+#Environment=ASPNETCORE_ENVIRONMENT=Production
+#Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target

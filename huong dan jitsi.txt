@@ -1,0 +1,59 @@
+bản cải tiến tách audio 
+sửa lỗi reconnect , mai test
+mạng tốc độ đã tốt 
+version 1, có mạng, có internet,
+
+- internet - anh Văn triển khai 
+- mai test thử
+- để máy chạy cả ngày, ko bị treo
+- có nút reset từ xa
+
+
+
+
+https://www.youtube.com/watch?v=D2jwMFBgl6k  
+
+Tìm ip máy ảo ubuntu trên terminal:
+
+ip addr show
+
+192.168.100.168
+hoặc 
+hostname -I 
+
+https://fatiherikci.com/en/install-jitsi-meet-on-debian-10/
+https://www.youtube.com/watch?v=D2jwMFBgl6k
+
+https://community.jitsi.org/t/setup-jitsi-url-and-port/16675
+
+https://www.youtube.com/watch?v=hw89Up0_vOo
+
+thay doi logo
+sudo nautilus /usr/share/jitsi-meet/images 
+
+huong dan thay doi hostname 
+https://community.jitsi.org/t/jitsi-meet-hostname-change/23291
+https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#uninstall
+
+dang nhap tu dong chrome
+https://tipsonubuntu.com/2017/12/20/google-chrome-asks-password-unlock-login-keyring/
+
+https://askubuntu.com/questions/31786/chrome-asks-for-password-to-unlock-keyring-on-startup
+
+https://www.youtube.com/watch?v=V5ZO-B1It9Y
+
+
+Nguyen Xuan Nam
+0978004683
+
+
+
+
+
+
+
+
+
+
+
+
