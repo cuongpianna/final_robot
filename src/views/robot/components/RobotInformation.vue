@@ -21,6 +21,19 @@
           Thông tin robot:
           <span>{{ robotObject.code }} - {{ robotObject.name}} <span v-if="robotObject.robotVersion != undefined">({{ robotObject.robotVersion.name }})</span></span>
 
+          <el-tooltip
+              class="item"
+              effect="dark"
+              :content="generateTitleView('videoCall' ,'dashboard')"
+              placement="top"
+          >
+            <el-button icon="el-icon-video-camera" class="btn-videocall" @click="redirectCall(robotObject.id)">
+              <font-awesome-icon icon="video" />
+            </el-button>
+          </el-tooltip>
+
+
+
         </div>
         <div class="map">
           Địa điểm: {{ areaName }} - {{ robotObject.map.name }}
@@ -131,6 +144,9 @@ export default {
     },
     updateTime() {
       this.dateNow = moment().format()
+    },
+    redirectCall(id) {
+      window.location.href = '/#/users/robots/call/' + id
     },
     generateTitleView
   }
@@ -261,6 +277,19 @@ $red1: #eb5757;
   font-weight: bold;
 
   &:hover{
+    background: #eb5757;
+  }
+}
+
+
+.btn-videocall {
+  padding: 7px 7px;
+  margin-left: 5px;
+  background: #409EFF;
+  color: white;
+  transition: all ease .5s;
+
+  &:hover {
     background: #eb5757;
   }
 }

@@ -473,10 +473,10 @@ export default {
         // devices: {
         //   videoInput: comunicationCameraDeviceName
         // },
-        interfaceConfigOverwrite: {
-          filmStripOnly: true,
-          verticalFilmstrip: true
-        },
+        //interfaceConfigOverwrite: {
+        //  filmStripOnly: true,
+        //  verticalFilmstrip: true
+        //},
         roomName: comunicationCameraRoomCode,
         parentNode: document.querySelector('#meetrb1')
 
